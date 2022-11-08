@@ -17,8 +17,9 @@
         <link 
         href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
         rel="stylesheet"  type='text/css'>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/js/script.js">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -29,7 +30,7 @@
             <div class="card-body">
                 
                 <div class="input mb-3 px-3">
-                    <input type="number" class="form-control m-2" id="sticker1" placeholder="cantidad de stickers" aria-label="StickerQuant"
+                    <input type="number" class="form-control m-2" id="poke1" placeholder="cantidad de stickers" aria-label="StickerQuant"
                         aria-describedby="button-addon2">
                     
                 </div>
@@ -41,7 +42,7 @@
             <div class="card-body">
                 
                 <div class="input mb-3 px-3">
-                    <input type="number" class="form-control m-2" id="sticker2" placeholder="cantidad de stickers" aria-label="StickerQuant"
+                    <input type="number" class="form-control m-2" id="poke2" placeholder="cantidad de stickers" aria-label="StickerQuant"
                         aria-describedby="button-addon2">
                     
                 </div>
@@ -53,7 +54,7 @@
             <div class="card-body">
                 
                 <div class="input mb-3 px-3">
-                    <input type="number" class="form-control m-2" id="sticker3" placeholder="cantidad de stickers" aria-label="StickerQuant"
+                    <input type="number" class="form-control m-2" id="poke3" placeholder="cantidad de stickers" aria-label="StickerQuant"
                         aria-describedby="button-addon2">
                     
                 </div>
@@ -63,11 +64,13 @@
         
             
         </div>
-        <button class="btn btn-primary text-light verify" type="button" id="verify">Verificar</button>
-        <div class="container result" id="result">
-        <p id="demo">Hello</p>
-        <button id="btn" type="button">Try it</button>
+        
+        <div class="container" id="result">
+        
             
+            <button class="btn btn-primary text-light" type="button" onclick="verify()">Verificar</button>
+            <p id="demo"></p>
+         
            
         </div>
        </div>
